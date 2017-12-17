@@ -1,0 +1,28 @@
+<!-- Submitted By Sunil Kumar -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Chat Box</title>
+      <link rel="stylesheet" href="chatBox.css">
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="chatBox.js"></script>
+   </head>
+   <body>
+      <div id="mainBox" class="mainDiv">
+		<div id="header" class="headerDiv"> Chat Bot </div>
+		<div id="displayMsg" style="    width: 100%;
+    height: 550px;
+    border: 2px solid black;
+    background-color: #eab5b5;
+    overflow: auto;"></div>
+		<div id="actionSpace" style="padding-top: 7px;
+    display: flex;">
+			<!--<input id="inputMsg" type="text" name="inputMssg" style="width:250px;height:60px">-->
+			<textarea id="inputMsg" style="width: 85%;
+    height: 50px;"></textarea>
+			<button type="button" style="width: 14%;
+    height: 56px;" onclick="sendMsg()">Send</button>
+		</div>
+	  <div>
+   </body>
+</html>
