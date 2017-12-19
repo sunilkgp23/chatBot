@@ -17,8 +17,10 @@ function sendMsg() {
 		localStorage.setItem("chatContent", chatContent);
 		botURL="http://www.personalityforge.com/api/chat/?apiKey=6nt5d1nJHkqbkphe&message="+msgInput+"&chatBotID=63906&externalID=chirag1";
 		
+		var proxy = 'https://cors-anywhere.herokuapp.com/';
+
 		$.ajax({
-			url: botURL,
+			url: proxy+botURL,
 			method: 'GET',
 			async: true,
 			dataType: "json"
