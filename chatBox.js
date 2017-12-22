@@ -15,12 +15,11 @@ function sendMsg() {
 		$("#displayMsg").scrollTop(function() { return this.scrollHeight; });
 		var chatContent = document.getElementById("displayMsg").innerHTML;
 		localStorage.setItem("chatContent", chatContent);
-		botURL="http://www.personalityforge.com/api/chat/?apiKey=6nt5d1nJHkqbkphe&message="+msgInput+"&chatBotID=63906&externalID=chirag1";
+		botURL="https://www.personalityforge.com/api/chat/?apiKey=6nt5d1nJHkqbkphe&message="+msgInput+"&chatBotID=63906&externalID=chirag1";
 		
-		var proxy = 'https://cors-anywhere.herokuapp.com/';
 
 		$.ajax({
-			url: proxy+botURL,
+			url: botURL,
 			method: 'GET',
 			async: true,
 			dataType: "json"
